@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Withdraw Money</title>
+    <style>
+        body {
+            background-color: #ffcccb;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 100px;
+            background: white;
+            padding: 30px;
+            width: 350px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            display: inline-block;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #FF5733;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #C70039;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Withdraw Money</h1>
+        <form action="./Withdraw" method="post">
+            <input type="text" name="accid" placeholder="Enter Account ID" required><br>
+            <input type="number" name="bal" placeholder="Enter Amount" required><br>
+            <button type="submit">Withdraw</button>
+        </form>
+    </div>
+
+</body>
+</html>
